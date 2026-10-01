@@ -151,26 +151,30 @@ This ensured that the deployed environment matched the intended design before ad
 
 ## Evidence
 
-Evidence was captured throughout the implementation and validation process.
+The following evidence was captured during the implementation and validation of the Azure network foundation.
 
-### Evidence Set
+### E001 — VNet Pre-Deployment Validation
 
-**E001 — Azure Lab Environment Established**  
-Azure environment successfully created and prepared for Project Atlas.
+The final configuration was reviewed and successfully validated before deployment. This confirms the planned `10.20.0.0/16` address space and the dedicated server and client subnets.
 
-**E002 — VNet Pre-Deployment Validation**  
-VNet configuration reviewed before deployment, confirming the intended address space and subnet design.
+![VNet pre-deployment validation](../evidence/lab-001/01-vnet-pre-deployment-validation.png)
 
-**E003 — Successful VNet Deployment**  
-Azure confirmed successful deployment of `vnet-atlas-lab`.
+### E002 — Successful VNet Deployment
 
-**E004 — Deployed Subnet Validation**  
-Post-deployment validation confirmed:
+Azure confirmed that the deployment of `vnet-atlas-lab` completed successfully within `rg-atlas-lab`.
+
+![VNet deployment successful](../evidence/lab-001/02-vnet-deployment-success.png)
+
+### E003 — Deployed Subnet Validation
+
+Post-deployment validation confirmed that both planned subnets were successfully created:
 
 - `snet-servers` — `10.20.10.0/24`
 - `snet-clients` — `10.20.20.0/24`
 
-> Public evidence will be sanitised before publication to prevent unnecessary Azure account or subscription information from being exposed.
+![Deployed subnet validation](../evidence/lab-001/03-subnet-validation.png)
+
+> **Security Note:** Public evidence has been reviewed to avoid exposing Azure subscription identifiers, credentials, personal information, employer information or other unnecessary account-specific data.
 
 ---
 
