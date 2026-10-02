@@ -177,6 +177,94 @@ Post-deployment validation confirmed that both planned subnets were successfully
 > **Security Note:** Public evidence has been reviewed to avoid exposing Azure subscription identifiers, credentials, personal information, employer information or other unnecessary account-specific data.
 
 ---
+---
+
+## Architecture Update — Regional Redeployment
+
+During preparation for the next phase of the lab, Azure VM availability was evaluated for the original UK South deployment.
+
+The required lab-sized Windows Server VM SKUs were unavailable for this subscription in UK South. To continue the infrastructure build while preserving the original network design, the network foundation was redeployed in West US 2.
+
+The original UK South deployment has been retained as evidence of the initial implementation.
+
+## Updated Architecture
+
+```text
+Azure Subscription
+│
+└── rg-atlas-lab
+    │
+    └── vnet-atlas-lab-us
+        │
+        ├── snet-servers
+        │   └── 10.20.10.0/24
+        │       └── DC01 [Planned]
+        │
+        └── snet-clients
+            └── 10.20.20.0/24
+                └── CL01 [Planned]
+```
+
+## Updated Configuration
+
+**Azure Region:** West US 2
+
+**Resource Group:** `rg-atlas-lab`
+
+**Virtual Network:** `vnet-atlas-lab-us`
+
+**VNet Address Space:** `10.20.0.0/16`
+
+**Server Subnet:** `snet-servers`
+
+**Server Subnet CIDR:** `10.20.10.0/24`
+
+**Client Subnet:** `snet-clients`
+
+**Client Subnet CIDR:** `10.20.20.0/24`
+
+The logical IP addressing and subnet segmentation were intentionally preserved during the regional redeployment. Only the Azure region and VNet resource name changed.
+
+## Validation
+
+The replacement virtual network successfully passed Azure pre-deployment validation and was deployed in West US 2.
+
+Post-deployment validation confirmed:
+
+- `vnet-atlas-lab-us` uses the intended `10.20.0.0/16` address space.
+- `snet-servers` is configured as `10.20.10.0/24`.
+- `snet-clients` is configured as `10.20.20.0/24`.
+- Both subnets are available for the next stages of the infrastructure build.
+
+## Evidence
+
+### E004 — West US 2 Pre-Deployment Validation
+
+The replacement VNet configuration successfully passed Azure validation before deployment.
+
+![West US 2 VNet pre-deployment validation](../evidence/lab-001/04-vnet-us-pre-deployment-validation.png)
+
+### E005 — West US 2 VNet Deployment
+
+Azure confirmed successful deployment of `vnet-atlas-lab-us` within `rg-atlas-lab`.
+
+![West US 2 VNet deployment success](../evidence/lab-001/05-vnet-us-deployment-success.png)
+
+### E006 — West US 2 Subnet Validation
+
+Post-deployment validation confirmed the dedicated server and client subnets.
+
+![West US 2 subnet validation](../evidence/lab-001/06-vnet-us-subnet-validation.png)
+
+## Engineering Decision
+
+The regional redeployment demonstrates an important infrastructure principle: preserve the intended architecture while adapting implementation details to platform constraints.
+
+The Atlas network design remains:
+
+`VNet → Server Subnet + Client Subnet → Workload Segmentation`
+
+West US 2 will be used as the deployment region for the subsequent compute resources in this lab.
 
 ## Skills Demonstrated
 
