@@ -1,4 +1,45 @@
 
+### LAB-005 Evidence
+
+#### 31 — VNet Custom DNS Configuration
+![VNet Custom DNS Configuration](../evidence/lab-005/31-vnet-custom-dns-configuration.png)
+
+#### 32 — DC01 DNS Health Validation
+![DC01 DNS Health Validation](../evidence/lab-005/32-dc01-dns-health-validation.png)
+
+#### 33 — CL01 Network Configuration
+![CL01 Network Configuration](../evidence/lab-005/33-cl01-network-configuration.png)
+
+#### 34 — CL01 Pre-Deployment Validation
+![CL01 Pre-Deployment Validation](../evidence/lab-005/34-cl01-pre-deployment-validation.png)
+
+#### 35 — CL01 Deployment Success
+![CL01 Deployment Success](../evidence/lab-005/35-cl01-deployment-success.png)
+
+#### 36 — Bastion Pre-Deployment Validation
+![Bastion Pre-Deployment Validation](../evidence/lab-005/36-bastion-pre-deployment-validation.png)
+
+#### 37 — Bastion Deployment Success
+![Bastion Deployment Success](../evidence/lab-005/37-bastion-deployment-success.png)
+
+#### 38 — CL01 Network and DNS Validation
+![CL01 Network and DNS Validation](../evidence/lab-005/38-cl01-network-dns-validation.png)
+
+#### 39 — CL01 AD Service Discovery
+![CL01 AD Service Discovery](../evidence/lab-005/39-cl01-ad-service-discovery-validation.png)
+
+#### 40 — CL01 Domain Join Success
+![CL01 Domain Join Success](../evidence/lab-005/40-cl01-domain-join-success.png)
+
+#### 41 — CL01 Workstations OU Validation
+![CL01 Workstations OU Validation](../evidence/lab-005/41-cl01-workstations-ou-validation.png)
+
+#### 42 — CL01 RDP Group Access Validation
+![CL01 RDP Group Access Validation](../evidence/lab-005/42-cl01-rdp-group-access-validation.png)
+
+#### 43 — CL01 Domain Authentication Validation
+![CL01 Domain Authentication Validation](../evidence/lab-005/43-cl01-domain-authentication-validation.png)
+
 # LAB-005 — Domain-Joined Client Infrastructure
 
 **Project:** Atlas Hybrid Infrastructure  
