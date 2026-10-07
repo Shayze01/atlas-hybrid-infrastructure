@@ -1,45 +1,4 @@
 
-### LAB-005 Evidence
-
-#### 31 — VNet Custom DNS Configuration
-![VNet Custom DNS Configuration](../evidence/lab-005/31-vnet-custom-dns-configuration.png)
-
-#### 32 — DC01 DNS Health Validation
-![DC01 DNS Health Validation](../evidence/lab-005/32-dc01-dns-health-validation.png)
-
-#### 33 — CL01 Network Configuration
-![CL01 Network Configuration](../evidence/lab-005/33-cl01-network-configuration.png)
-
-#### 34 — CL01 Pre-Deployment Validation
-![CL01 Pre-Deployment Validation](../evidence/lab-005/34-cl01-pre-deployment-validation.png)
-
-#### 35 — CL01 Deployment Success
-![CL01 Deployment Success](../evidence/lab-005/35-cl01-deployment-success.png)
-
-#### 36 — Bastion Pre-Deployment Validation
-![Bastion Pre-Deployment Validation](../evidence/lab-005/36-bastion-pre-deployment-validation.png)
-
-#### 37 — Bastion Deployment Success
-![Bastion Deployment Success](../evidence/lab-005/37-bastion-deployment-success.png)
-
-#### 38 — CL01 Network and DNS Validation
-![CL01 Network and DNS Validation](../evidence/lab-005/38-cl01-network-dns-validation.png)
-
-#### 39 — CL01 AD Service Discovery
-![CL01 AD Service Discovery](../evidence/lab-005/39-cl01-ad-service-discovery-validation.png)
-
-#### 40 — CL01 Domain Join Success
-![CL01 Domain Join Success](../evidence/lab-005/40-cl01-domain-join-success.png)
-
-#### 41 — CL01 Workstations OU Validation
-![CL01 Workstations OU Validation](../evidence/lab-005/41-cl01-workstations-ou-validation.png)
-
-#### 42 — CL01 RDP Group Access Validation
-![CL01 RDP Group Access Validation](../evidence/lab-005/42-cl01-rdp-group-access-validation.png)
-
-#### 43 — CL01 Domain Authentication Validation
-![CL01 Domain Authentication Validation](../evidence/lab-005/43-cl01-domain-authentication-validation.png)
-
 # LAB-005 — Domain-Joined Client Infrastructure
 
 **Project:** Atlas Hybrid Infrastructure  
@@ -236,8 +195,10 @@ The Azure VNet custom DNS setting provides the DNS server configuration to VMs u
 
 ### Evidence
 
-- [31 — VNet Custom DNS Configuration](../evidence/lab-005/31-vnet-custom-dns-configuration.png)
-- [32 — DC01 DNS Health Validation](../evidence/lab-005/32-dc01-dns-health-validation.png)
+#### 31 — VNet Custom DNS Configuration
+![VNet Custom DNS Configuration](../evidence/lab-005/31-vnet-custom-dns-configuration.png)
+#### 32 — DC01 DNS Health Validation
+![DC01 DNS Health Validation](../evidence/lab-005/32-dc01-dns-health-validation.png)
 
 ---
 
@@ -338,9 +299,13 @@ After allowing the VM to initialise and refreshing the Overview page, the agent 
 
 ### Evidence
 
-- [33 — CL01 Network Configuration](../evidence/lab-005/33-cl01-network-configuration.png)
-- [34 — CL01 Pre-Deployment Validation](../evidence/lab-005/34-cl01-pre-deployment-validation.png)
-- [35 — CL01 Deployment Success](../evidence/lab-005/35-cl01-deployment-success.png)
+#### 33 — CL01 Network Configuration
+![CL01 Network Configuration](../evidence/lab-005/33-cl01-network-configuration.png)
+
+#### 34 — CL01 Pre-Deployment Validation
+![CL01 Pre-Deployment Validation](../evidence/lab-005/34-cl01-pre-deployment-validation.png)
+#### 35 — CL01 Deployment Success
+![CL01 Deployment Success](../evidence/lab-005/35-cl01-deployment-success.png)
 
 ---
 
@@ -469,8 +434,11 @@ The Bastion resource should be removed when no longer required for the lab.
 
 ### Evidence
 
-- [36 — Bastion Pre-Deployment Validation](../evidence/lab-005/36-bastion-pre-deployment-validation.png)
-- [37 — Bastion Deployment Success](../evidence/lab-005/37-bastion-deployment-success.png)
+#### 36 — Bastion Pre-Deployment Validation
+![Bastion Pre-Deployment Validation](../evidence/lab-005/36-bastion-pre-deployment-validation.png)
+
+#### 37 — Bastion Deployment Success
+![Bastion Deployment Success](../evidence/lab-005/37-bastion-deployment-success.png)
 
 ---
 
@@ -539,7 +507,8 @@ This confirmed that DNS queries from the client subnet were being answered corre
 
 ### Evidence
 
-- [38 — CL01 Network and DNS Validation](../evidence/lab-005/38-cl01-network-dns-validation.png)
+#### 38 — CL01 Network and DNS Validation
+![CL01 Network and DNS Validation](../evidence/lab-005/38-cl01-network-dns-validation.png)
 
 ---
 
@@ -582,8 +551,8 @@ This verified the required DNS service-discovery information before domain joini
 
 ### Evidence
 
-- [39 — CL01 AD Service Discovery Validation](../evidence/lab-005/39-cl01-ad-service-discovery-validation.png)
-
+#### 39 — CL01 AD Service Discovery
+![CL01 AD Service Discovery](../evidence/lab-005/39-cl01-ad-service-discovery-validation.png)
 ---
 
 ## 8. CL01 Active Directory Domain Join
@@ -661,7 +630,8 @@ CL01 successfully became a member of the `corp.atlas.local` Active Directory dom
 
 ### Evidence
 
-- [40 — CL01 Domain Join Success](../evidence/lab-005/40-cl01-domain-join-success.png)
+#### 40 — CL01 Domain Join Success
+![CL01 Domain Join Success](../evidence/lab-005/40-cl01-domain-join-success.png)
 
 ---
 
@@ -717,7 +687,8 @@ CL01 was successfully moved into the Workstations OU.
 
 ### Evidence
 
-- [41 — CL01 Workstations OU Validation](../evidence/lab-005/41-cl01-workstations-ou-validation.png)
+#### 41 — CL01 Workstations OU Validation
+![CL01 Workstations OU Validation](../evidence/lab-005/41-cl01-workstations-ou-validation.png)
 
 ---
 
@@ -813,7 +784,8 @@ Further authentication troubleshooting was still required before the domain user
 
 ### Evidence
 
-- [42 — CL01 RDP Group Access Validation](../evidence/lab-005/42-cl01-rdp-group-access-validation.png)
+#### 42 — CL01 RDP Group Access Validation
+![CL01 RDP Group Access Validation](../evidence/lab-005/42-cl01-rdp-group-access-validation.png)
 
 ---
 
@@ -1219,7 +1191,8 @@ The command completed successfully.
 
 ### Evidence
 
-- [43 — CL01 Domain Authentication Validation](../evidence/lab-005/43-cl01-domain-authentication-validation.png)
+#### 43 — CL01 Domain Authentication Validation
+![CL01 Domain Authentication Validation](../evidence/lab-005/43-cl01-domain-authentication-validation.png)
 
 ---
 
