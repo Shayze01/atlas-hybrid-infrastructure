@@ -84,6 +84,26 @@ Validation included DNS resolution, Active Directory diagnostics, and verificati
 
 ---
 
+### LAB-004 — Active Directory Identity & Access Management
+
+Implemented an enterprise-style identity and access management structure within the `corp.atlas.local` domain using Organizational Units, departmental user accounts, and Global Security Groups.
+
+User-to-group membership was validated through Active Directory Users and Computers and independently verified using PowerShell.
+
+**Key Skills:**
+- Active Directory administration
+- Organizational Unit design
+- User provisioning
+- Global Security Groups
+- Group-based access management
+- Active Directory PowerShell
+- Identity and access management
+- Infrastructure validation
+
+**Documentation:** [`LAB-004 — Active Directory Identity & Access Management`](docs/LAB-004-active-directory-identity-access-management.md)
+
+**Evidence:** [`evidence/lab-004`](evidence/lab-004)
+
 ## Infrastructure Progress
 
 Current environment:
@@ -113,14 +133,19 @@ The environment currently provides a functional Active Directory and DNS foundat
     ├── evidence/
     │   ├── lab-001/
     │   ├── lab-002/
-    │   └── lab-003/
+    │   ├── lab-003/
+    │   └── lab-004/
     ├── LICENSE
     └── README.md
+
+## Project Status
 
 ## Project Status
 
 **LAB-001:** Completed  
 **LAB-002:** Completed  
 **LAB-003:** Completed  
+**LAB-004:** Completed  
 
-**Next Phase:** Active Directory Identity & Access Management
+**Next Phase:** Domain-Joined Client Infrastructure & Group Policy
+
